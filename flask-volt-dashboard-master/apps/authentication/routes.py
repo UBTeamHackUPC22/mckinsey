@@ -2,8 +2,17 @@
 """
 Copyright (c) 2019 - present AppSeed.us
 """
+import functools
 
-from flask import render_template, redirect, request, url_for
+from flask import (
+    render_template, 
+    redirect, 
+    request, 
+    url_for,
+    session, 
+    g
+)
+
 from flask_login import (
     current_user,
     login_user,
@@ -96,11 +105,10 @@ def register():
 @blueprint.route('/logout')
 def logout():
     logout_user()
-    return redirect(url_for('authentication_blueprint.login'))
+    return redirect(url_for('home_blueprint.index'))
 
 
 # Errors
-
 @login_manager.unauthorized_handler
 def unauthorized_handler():
     return render_template('home/page-403.html'), 403
@@ -119,3 +127,19 @@ def not_found_error(error):
 @blueprint.errorhandler(500)
 def internal_error(error):
     return render_template('home/page-500.html'), 500
+
+
+
+# Views requiring authentication: create, edit, and delete blog posts.
+# --------------------------------------------------------------------
+def login_required(view):
+    # Decorator returning a new view function that wrap's the 
+    # original view it's applied to. Like a precondition.
+    @functools.wraps(view)
+    def wrapped_view(**kwargs):
+        if g.user is None:
+            return redirect(url_for('auth.login'))
+
+        return view(**kwargs)
+
+    return wrapped_view

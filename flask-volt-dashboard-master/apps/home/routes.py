@@ -21,3 +21,9 @@ def dashboard():
         return redirect(url_for('authentication_blueprint.login', form = 'login_form'))
     return render_template('home/dashboard.html', segment='dashboard')
 
+@blueprint.route('/settings')
+def settings():
+    if not current_user.is_authenticated:
+        return redirect(url_for('authentication_blueprint.login', form = 'login_form'))
+    return render_template('home/settings.html', segment='dashboard')
+
