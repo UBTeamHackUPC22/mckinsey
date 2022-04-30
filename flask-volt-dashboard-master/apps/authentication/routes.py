@@ -6,6 +6,7 @@ import functools
 
 from flask import (
     render_template, 
+    current_app,
     redirect, 
     request, 
     url_for,
@@ -18,6 +19,8 @@ from flask_login import (
     login_user,
     logout_user
 )
+
+import os
 
 from apps import db, login_manager
 from apps.authentication import blueprint
@@ -49,7 +52,12 @@ def login():
         # Check the password
         if user and verify_pass(password, user.password):
 
+            # Log in the user and create its data directory 
+            # (it's a hackathon man, not best design)
             login_user(user)
+            os.makedirs(os.path.join(current_app.config['UPLOAD_FOLDER'], 
+                            str(current_user.get_id())))
+
             return redirect(url_for('authentication_blueprint.route_default'))
 
         # Something (user or pass) is not ok

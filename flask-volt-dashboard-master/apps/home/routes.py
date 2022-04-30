@@ -46,7 +46,7 @@ def dashboard():
 
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
-            file.save(os.path.join(current_app.config['UPLOAD_FOLDER'], filename))
+            file.save(os.path.join(current_app.config['UPLOAD_FOLDER'], current_user.get_id(), filename))
             return redirect(url_for('home_blueprint.dashboard'))
 
     if not current_user.is_authenticated:
