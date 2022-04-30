@@ -1,3 +1,16 @@
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    function cb(selection) {
+        $.getJSON({
+            url: "/callback", data: { 'data': selection }, success: function (result) {
+                Plotly.newPlot('chart', result, {});;
+            }
+        });
+    }
+</script>
+
 {% extends "layouts/base.html" %}
 
 {% block title %} Dashboard {% endblock %} 
@@ -48,6 +61,23 @@
             </a>
         </div>
     </div>
+
+    <div id='chart' class='chart'></div>
+
+    <form class="form-inline">
+        <div class="form-group">
+        <div class="input-group">
+            <span class="input-group-addon">Please select</span>
+                <select name="comp_select" class="selectpicker form-control" onchange="cb(this.value)">
+                    {% for o in data %}
+                    <option value="{{ o.name }}">{{ o.name }}</option>
+                    {% endfor %}
+                </select>
+        </div>
+        <button type="submit" class="btn btn-default">Go</button>
+        </div>
+    </form>
+
     
     <div class="row">
         <div class="col-12 mb-4">
@@ -589,4 +619,8 @@
 {% endblock content %}
 
 <!-- Specific Page JS goes HERE  -->
-{% block javascripts %}{% endblock javascripts %}
+{% block javascripts %}
+<script>
+    cb("Days");
+</script>
+{% endblock javascripts %}
