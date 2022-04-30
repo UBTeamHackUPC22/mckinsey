@@ -7,6 +7,8 @@ from flask_migrate import Migrate
 from sys import exit
 from decouple import config
 
+from flask import Flask, flash, redirect, render_template, request, url_for
+
 from apps.config import config_dict
 from apps import create_app, db
 
