@@ -68,3 +68,10 @@ def gm(grouped_by='Days'):
         fig = px.line(df_sales.groupby('date').sum()['price'])
     graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
     return graphJSON
+
+@blueprint.route('/settings')
+def settings():
+    if not current_user.is_authenticated:
+        return redirect(url_for('authentication_blueprint.login', form = 'login_form'))
+    return render_template('home/settings.html', segment='dashboard')
+
