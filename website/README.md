@@ -16,32 +16,6 @@
 
 <br />
 
-> Links
-
-- 👉 [Flask Bootstrap 5 Volt](https://appseed.us/admin-dashboards/flask-dashboard-volt) - product page
-- 👉 [Flask Bootstrap 5 Volt](https://flask-volt-dashboard.appseed-srv1.com/) - LIVE deployment
-
-<br />
-
-## ✨ Quick Start in `Docker`
-
-> Get the code
-
-```bash
-$ git clone https://github.com/app-generator/flask-volt-dashboard.git
-$ cd flask-volt-dashboard
-```
-
-> Start the app in Docker
-
-```bash
-$ docker-compose up --build 
-```
-
-Visit `http://localhost:85` in your browser. The app should be up & running.
-
-<br />
-
 ![Flask Bootstrap 5 Volt - Template project provided by AppSeed.](https://raw.githubusercontent.com/app-generator/flask-dashboard-volt/master/media/flask-dashboard-volt-intro.gif)
 
 <br />
