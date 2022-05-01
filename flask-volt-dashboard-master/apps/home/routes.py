@@ -80,6 +80,9 @@ def callback():
     print("CALLBACK!")
     return gm(request.args.get('data'))
 
+@blueprint.route('/profiling')
+def profiling():
+    return render_template("home/mckiensy.html")
 
 def gm(grouped_by = 'Days'):
     """if 'dataframe' in session:
