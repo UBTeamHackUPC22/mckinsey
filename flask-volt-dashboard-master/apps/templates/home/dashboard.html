@@ -620,7 +620,9 @@
 
 <!-- Specific Page JS goes HERE  -->
 {% block javascripts %}
+{% if render_graphics %}
 <script>
     cb("Days");
 </script>
+{% endif %}
 {% endblock javascripts %}

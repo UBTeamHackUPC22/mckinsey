@@ -55,9 +55,14 @@ def login():
             # Log in the user and create its data directory 
             # (it's a hackathon man, not best design)
             login_user(user)
-            os.makedirs(os.path.join(current_app.config['UPLOAD_FOLDER'], 
-                            str(current_user.get_id())))
 
+            user_upload_dir = os.path.join(
+                current_app.config['UPLOAD_FOLDER'], 
+                str(user.get_id()))
+
+            if not os.path.exists(user_upload_dir):
+                os.makedirs(user_upload_dir)
+            
             return redirect(url_for('authentication_blueprint.route_default'))
 
         # Something (user or pass) is not ok
