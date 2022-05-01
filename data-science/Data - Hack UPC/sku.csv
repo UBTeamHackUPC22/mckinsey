@@ -1,0 +1,61 @@
+SKU,Category,Type,brandId,lagerUnitQuantity,Units,trademark,countryOfOrigin,Group
+24,Pomegranate,Tropical fruit — Pomegranate— Plain,,1.0,,,,Tropical fruits
+208,"Water, sparkling",Therapeutic-table water — PET — from 1 to 2 L,1241.0,1.5,,3670.0,1.0,Mineral water
+1008,"Water, import, sparkling",Therapeutic-table water — Import — Glass,1241.0,0.5,,4970.0,14.0,Mineral water
+16649,"Water, still",Table water — PET — from 1 to 2 L — Still,1241.0,1.5,,1323.0,1.0,Mineral water
+20872,"Water, sparkling",Therapeutic-table water — PET — from 1 to 2 L,2693.0,1.5,,4384.0,1.0,Mineral water
+26194,Semi-hard coarse-pored cheese,semi-hard cheese — More expensive — National — Available import,2737.0,1.0,,4891.0,16.0,Cheese
+32485,Banana,Banana — Plain,,1.0,,,,Tropical fruits
+32490,Avocado,Tropical fruit — Avocado,,1.0,,,,Tropical fruits
+32546,Orange,Citrus fruit — Orange — Plain,,1.0,,,,Tropical fruits
+32549,Grapefruit,Citrus fruit — Grapefruit — Plain,,1.0,,,,Tropical fruits
+32550,Lemon,Citrus fruit — Lemon — Plain,,1.0,,,,Tropical fruits
+39465,"Water, slightly sparkling",Table water — PET — from 1 to 2 L — Slightly sparkling,1241.0,1.5,,1323.0,1.0,Mineral water
+47330,Semi-hard coarse-pored cheese,semi-hard cheese — More expensive — National — Available import,2737.0,1.0,,297.0,16.0,Cheese
+49207,Mango,Tropical fruit — Mango — Plain,,1.0,,,,Tropical fruits
+49450,Semi-hard bulk cheese,semi-hard cheese — Cheaper— National — Bulk — Rossiysky,7418.0,1.0,,1192.0,1.0,Cheese
+67802,"Water, sparkling",Table water — PET — from 1 to 2 L — Strongly sparkling,1330.0,2.0,,2781.0,1.0,Mineral water
+89074,Milk cakes,Sponge cake,2724.0,28.0,,1835.0,,Yogurts
+96123,Grapefruit,Citrus fruit — Grapefruit — Graded,,1.0,,,37.0,Tropical fruits
+134544,Kiwi,Tropical fruit — Kiwi— Plain,,1.0,,,,Tropical fruits
+144184,Lime,Citrus fruit — Lime,,1.0,,,,Tropical fruits
+219078,"Plain long loaf, own production",Bread — plain — wheat,,500.0,,9666.0,1.0,Bakery
+219149,"Plain baguette loaf, own production",Baguette loaf — plain,,250.0,,9666.0,1.0,Bakery
+221793,"Small flavored bread roll, own production",Small bread rolls,,70.0,,9666.0,1.0,Bakery
+224200,"Plain wheat bread, toast-type, own production",Bread — plain — wheat,,550.0,,9666.0,1.0,Bakery
+233272,"Water, import, sparkling",Therapeutic-table water — Import — PET,2737.0,1.0,,1839.0,14.0,Mineral water
+259516,"Sweet bun, own production",Fancy bread — small — sweet,,200.0,,9666.0,1.0,Bakery
+362721,"Plain fancy cake, own production",Cupcake,,300.0,,9666.0,1.0,Bakery
+363713,"Rye-wheat grain bread baked in the hearth, own production",Bread — flavored,,1.0,,15156.0,1.0,Bakery
+369071,"Water, still",Table water — PET — from 1 to 2 L — Still,1330.0,2.0,,2781.0,1.0,Mineral water
+375210,"Plain baguette loaf baked in the hearth, own production",Baguette loaf — plain,,300.0,,15156.0,1.0,Bakery
+437495,"Plain croissant, parbaking",Croissant,8314.0,50.0,,9666.0,6.0,Bakery
+440815,"Water, still",Table water — PET — more than 3 L,1330.0,6.0,,2781.0,1.0,Mineral water
+503007,"Plain rye-wheat bread, parbaking",Bread — plain — rye-wheat,8274.0,340.0,,,1.0,Bakery
+521941,"Fancy strudel with poppy stuff, own production",Fancy bread — large — sweet,,1.0,,15156.0,1.0,Bakery
+534443,"Water, import, sparkling",Therapeutic-table water — Import — PET,1241.0,0.75,,4970.0,14.0,Mineral water
+543663,"Soft cheese, white mold",soft cheese — More expensive — Import — White mold — Brie,2737.0,1.0,,8802.0,6.0,Cheese
+552806,"Flavored baguette loaf baked in the hearth, own production",Baguette loaf — Flavored,,300.0,,15156.0,1.0,Bakery
+552812,"Plain bread roll baked in the hearth, own production",Bread roll — plain,,400.0,,15156.0,1.0,Bakery
+567970,"Plain baguette loaf baked in the hearth, own production",Baguette loaf — plain,2737.0,300.0,,9974.0,1.0,Bakery
+571255,Semi-hard coarse-pored cheese,semi-hard cheese — More expensive — National — Available import,2737.0,1.0,,1037.0,33.0,Cheese
+571258,Semi-hard layered cheese,semi-hard cheese — More expensive — National — Available import,2737.0,1.0,,1037.0,33.0,Cheese
+591899,"Flavored wheat bread baked in the hearth, own production",Bread — flavored,,1.0,,15156.0,1.0,Bakery
+596031,"Grain bread roll baked in the hearth, own production",Bread roll — grain,,400.0,,15156.0,,Bakery
+612845,,,967.0,305.0,,1120.0,,Yogurts
+638673,"Small fancy bread with berry stuff, own production",Fancy bread — small — sweet,,80.0,,9666.0,,Bakery
+642700,Semi-hard coarse-pored cheese,semi-hard cheese — More expensive — National — Available import,2737.0,1.0,,11960.0,16.0,Cheese
+650670,Milk desserts,Milk desserts — up to 200 g,2313.0,120.0,,1921.0,,Yogurts
+660399,"Flavored wheat bread baked in the hearth, own production",Bread — flavored,2737.0,400.0,,9974.0,,Bakery
+666058,"Small fancy bread with berry stuff, own production",Fancy bread — small — sweet,,70.0,,9666.0,,Bakery
+690818,"Ciabatta, light, plain, parbaking",Ciabatta,8274.0,250.0,,4043.0,,Bakery
+711838,"Wheat bran bread baked in the hearth, own production",Bread — plain — wheat,2737.0,350.0,,9974.0,,Bakery
+736357,Yoghurts,Yoghurt — firm —plain,8276.0,400.0,,5070.0,,Yogurts
+736360,Yoghurts,Yoghurt — firm —plain,8276.0,350.0,,5070.0,,Yogurts
+782787,,,1594.0,350.0,,1173.0,,Yogurts
+787133,Avocado,Tropical fruit — Avocado — Ready to Eat,,2.0,,9666.0,,Tropical fruits
+802382,,,3784.0,350.0,,2980.0,,Yogurts
+815381,Mandarin,Citrus fruit — Mandarin — Graded,,1.0,,9666.0,,Tropical fruits
+819149,,,7358.0,350.0,,6133.0,,Yogurts
+819150,,,7358.0,350.0,,6133.0,,Yogurts
+838137,Avocado,Tropical fruit — Avocado — Ready to Eat,,1.0,,9666.0,,Tropical fruits
