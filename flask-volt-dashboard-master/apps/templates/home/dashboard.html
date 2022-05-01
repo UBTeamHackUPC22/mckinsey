@@ -9,6 +9,14 @@
             }
         });
     }
+
+    function ci(){
+        console.log("HEEEEEY")
+        document.getElementById('upload_file').submit();
+    }
+
+</script>
+
 </script>
 
 {% extends "layouts/base.html" %}
@@ -19,6 +27,44 @@
 {% block stylesheets %}{% endblock stylesheets %}
 
 {% block content %}
+
+    <br>
+    <h2 style="display:flex; justify-content: center;"> Automatize your e-Commerce Analytics </h2>
+    <br>
+    <h6 style="padding-left: 3em; padding-right: 3em"> 
+        In McKinsey&Company we aim to provide our customers a simple, practical and user-friendly tool 
+        to help analizing their eCommerce company. To begin interacting with us, <span>upload</span> your 
+        .csv files:
+    </h6>
+    <br>
+    <br>
+
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+      </form>
+    
+    <div class="dropdown">
+        <form method="post" id="upload_file" enctype="multipart/form-data">
+            <label class="btn btn-gray-800 d-inline-flex align-items-center me-2 dropdown-toggle">
+                <input type="file" onchange="ci()"/> Upload File
+            </label>
+        </form>
+    </div>
+    <br>
+
+    <div>
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <input type="submit">
+        </form>
+
+        <button class="btn btn-gray-800 d-inline-flex align-items-center me-2 dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <svg class="icon icon-xs me-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+            Upload File
+        </button>
+
+    </div>
 
     <div class="py-4">
         <form method="post" enctype="multipart/form-data">

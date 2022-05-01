@@ -74,10 +74,14 @@
                         <a href="/dashboard" class="nav-link">Dashboard</a>
                     </li>
                     <li class="nav-item me-2">
-                        <a href="/settings.html" class="nav-link">Settings</a>
-                    </li>                        
+                        <a href="/settings" class="nav-link">Settings</a>
+                    </li>
                     <li class="nav-item mr-2">
+                        {% if current_user.is_authenticated %}
                         <a href="{{ url_for('authentication_blueprint.logout') }}" class="nav-link">Logout</a>
+                        {% else %}
+                        <a href="{{ url_for('authentication_blueprint.login') }}" class="nav-link">Login</a>
+                        {% endif %}
                     </li>
                 </ul>
             </div>
@@ -97,7 +101,7 @@
         <!-- Hero -->        
         <section class="overflow-hidden bg-primary">               
             <div class="hero-section">
-                <div class="hero-section__wrapper" width = "80" height="auto">                   
+                <div class="iframe-wrapper pt-5 pl">                   
                     <iframe class="iframePlanet" title="Earthquakes - 2000 to 2019" frameborder="1" mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking="" execution-while-out-of-viewport="" execution-while-not-rendered="" web-share="" src="https://sketchfab.com/models/fb78f4cc938144e6902dd5cff354d525/embed?autospin=1&amp;autostart=1&amp;annotations_visible=0&amp;transparent=1&amp;ui_animations=0&amp;ui_infos=0&amp;ui_stop=0&amp;ui_inspector=0&amp;ui_watermark_link=0&amp;ui_watermark=0&amp;ui_hint=0&amp;ui_ar=0&amp;ui_help=0&amp;ui_settings=0&amp;ui_vr=0&amp;ui_fullscreen=0&amp;ui_annotations=0"></iframe>                   
                 </div>
             </div>
@@ -113,26 +117,20 @@
             
             <div class="section pt-0">
                 <div class="container mt-n10 mt-lg-n12 z-1">
-                    <div class="row justify-content-center">
-                        <div class="col-12">
-                            <img src = "static/assets/img/capt.png" height = "100" width = "150"/>
-                            <a href="https://www.linkedin.com/in/oriol-saguillo/">
-                                <img src = "static/assets/img/oriol.svg" height = "auto" width = "215"/>
-                            </a>
-                            <a href="https://www.linkedin.com/in/eric-gonzalez-duro-22b67b227/">
-                                <img src = "static/assets/img/eric.svg" height = "auto" width = "200"/>
-                            </a>
-                            <a href="https://www.linkedin.com/in/arnau-mart%C3%ADnez-tom%C3%A0s-5427a2212/">
-                                <img src = "static/assets/img/arnau.svg" height = "auto" width = "220"/>
-                            </a>
-                            <a href="https://www.linkedin.com/in/andreu-vall/">
-                                <img src = "static/assets/img/andreu.svg" height = "auto" width = "205"/>
-                            </a>
-
-
-
-    
-                        </div>
+                    <div class="profile-image">
+                        <span style="padding-left: 10%"></span>
+                        <a href="https://www.linkedin.com/in/oriol-saguillo/">
+                            <img src = "static/assets/img/oriol.svg" height = "auto" width = "215"/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/eric-gonzalez-duro-22b67b227/">
+                            <img src = "static/assets/img/eric.svg" height = "auto" width = "200"/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/arnau-mart%C3%ADnez-tom%C3%A0s-5427a2212/">
+                            <img src = "static/assets/img/arnau.svg" height = "auto" width = "220"/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/andreu-vall/">
+                            <img src = "static/assets/img/andreu.svg" height = "auto" width = "205"/>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -162,7 +160,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <img class="navbar-brand-dark mb-4" height="35" src="/static/assets/img/brand/light.svg" alt="Logo light">
-                    <p>Predictum is a cutting-edge software, which allow users to predict sells about grocery products</p>
+                    <p>McKinsey&Company is a cutting-edge software, which allow users to predict sells about grocery products</p>
                 </div>
                 <div class="col-6 col-md-2 mb-5 mb-lg-0">
                     <span class="h5">McKinsey</span>

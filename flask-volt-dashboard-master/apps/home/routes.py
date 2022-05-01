@@ -38,9 +38,10 @@ def index():
 def dashboard():
 
     if request.method == 'POST':
-
+        print("POST")
         # check if the post request has the file part
         if 'file' not in request.files:
+            print("File not submitted")
             flash('No file part')
             return redirect(request.url)
 
@@ -106,7 +107,7 @@ def gm(grouped_by = 'Days'):
 
     print("Yeah I get to the function")
     if grouped_by == 'Days':
-        fig = px.line(df_sales.groupby('date').sum()['price'])
+        fig = px.line(y = df_sales.groupby('date').sum()['incomes'], color_discrete_sequence = ['#f0bc74'])
 
     elif grouped_by == 'Weeks':
         df_sales['date2'] = pd.to_datetime(df_sales['date']) - pd.to_timedelta(7, unit='d')
@@ -114,12 +115,10 @@ def gm(grouped_by = 'Days'):
 
     elif grouped_by == 'Months':
         df_sales['date3'] = pd.to_datetime(df_sales['date']) - pd.to_timedelta(30, unit='d')
-        fig = px.line(df_sales.groupby([pd.Grouper(key='date3', freq='1M')])['price'].sum())
+        fig = px.line(df_sales.groupby([pd.Grouper(key='date3', freq='1M')])['incomes'].sum())
 
     else:
-        fig = px.line(df_sales.groupby('date').sum()['price'])
-
-    print("I CALL THE CV", grouped_by)
+        fig = px.line(df_sales.groupby('date').sum()['incomes'])
     
     graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
     return graphJSON
