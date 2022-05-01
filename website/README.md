@@ -1,3 +1,9 @@
+## Website
+
+![](./media/landing_page.jpg)
+![](./media/product.jpg)
+
+
 ## ✨ How to use it
 
 ```bash
