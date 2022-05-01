@@ -50,6 +50,12 @@
 .datepicker-main {
   padding: 2px; }
 
+.hero-section {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
 .datepicker-footer {
   box-shadow: inset 0 1px 1px rgba(17, 24, 39, 0.1);
   background-color: #9CA3AF; }
@@ -1265,10 +1271,27 @@ progress {
 .container-lg,
 .container-xl {
   width: 100%;
+  height: fit-content;
   padding-right: var(--bs-gutter-x, 1rem);
   padding-left: var(--bs-gutter-x, 1rem);
   margin-right: auto;
   margin-left: auto; }
+
+  .logofront{
+    z-index: 4;
+    position: absolute;
+    top: 190px;
+    padding-left: 520px;
+  }
+
+
+  .iframePlanet {
+    width: 100%;
+    height: 35rem;
+  }
+  iframe {
+    overflow: hidden;
+  }
 
 @media (min-width: 576px) {
   .container, .container-sm {
